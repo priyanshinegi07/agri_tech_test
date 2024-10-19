@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgriTech-Empower</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- GOOGLE FONT (MONTSERRAT) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 
@@ -80,10 +87,118 @@
 
 
      </section>
+     <!---------------------- FAQ's Section --------------------->
+     <section class="faqs">
+      <h2 id="head_dark">Frequently Asked Questions</h2>
+      <div class="container faqs__container">
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 class="h4_faq">What is the mission of AgriTech Empower?</h4>
+                  <p>
+                      Our mission is to optimize farm management, reduce risks, and promote environmental stewardship by empowering farmers with cutting-edge tools and knowledge.
+                  </p>
+              </div>
+          </article>
 
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 class="h4_faq">Is the platform user-friendly for farmers?</h4>
+                  <p>
+                      Absolutely! AgriTech Empower features a user-friendly interface that is mobile-accessible and includes a multilingual dashboard to cater to diverse users.
+                  </p>
+              </div>
+          </article>
+          
+  
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 class="h4_faq">What real-time monitoring features does AgriTech Empower offer?</h4>
+                  <p>
+                      Our IoT sensors monitor soil conditions for precise irrigation, and farmers receive instant alerts on weather changes and market trends to aid proactive farming.
+                  </p>
+              </div>
+          </article>
 
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 class="h4_faq">How does AgriTech Empower help farmers make data-driven decisions?</h4>
+                  <p>
+                      Our platform offers interactive charts displaying crop growth trends, weather forecasts, and market prices, allowing farmers to make informed decisions quickly.
+                  </p>
+              </div>
+          </article>
+  
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 class="h4_faq">What AI-driven insights does AgriTech Empower provide?</h4>
+                  <p>
+                      We use machine learning to offer personalized insurance recommendations, ensuring that farmers' investments are well-protected.
+                  </p>
+              </div>
+          </article>
+  
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 class="h4_faq">How can I monitor livestock and farm management?</h4>
+                  <p>
+                      Farmers can efficiently track animal health, feeding schedules, and productivity through our management tools, ensuring optimal care for livestock.
+                  </p>
+              </div>
+          </article>
+  
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 class="h4_faq">How accurate is the weather forecasting on your platform?</h4>
+                  <p>
+                      We provide accurate weather predictions, helping farmers protect their crops and plan their activities effectively.
+                  </p>
+              </div>
+          </article>
+  
+          <article class="faq">
+              <div class="faq__icon"><i class="uil uil-plus"></i></div>
+              <div class="question__answer">
+                  <h4 class="h4_faq">How does AgriTech Empower promote sustainability?</h4>
+                  <p>
+                      We educate farmers on eco-friendly practices and sustainable farming methods, helping them to minimize environmental impact while maximizing productivity.
+                  </p>
+              </div>
+          </article>
+  
+  
+          
+      </div>
+  </section>
+  <!-- ==========================END OF FAQS========================== -->
 
     <div style="margin-top: 500px;"></div>
+    <script>
+      //show/hide faq answer
+      const faqs = document.querySelectorAll('.faq');
+
+      faqs.forEach(faq => {
+          faq.addEventListener('click',()=>{
+              faq.classList.toggle('open');
+
+              //change icon
+              const icon =faq.querySelector('.faq__icon i');
+              if(icon.className === 'uil uil-plus'){
+                  icon.className = "uil uil-minus";
+              }
+              else {
+                  icon.className = "uil uil-plus";
+              }
+          })
+      })
+
+   </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
